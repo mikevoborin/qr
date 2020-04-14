@@ -2,6 +2,7 @@ from PIL import Image
 import pyzbar.pyzbar as pyzbar
 import time
 
+
 path = "C:/Users/Proteam/Desktop/test/generate-barcode8l.png"  # /QR_Code.png /generate-barcode.png /frame2.png
 
 
