@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>701</width>
+    <width>733</width>
     <height>564</height>
    </rect>
   </property>
@@ -20,7 +20,7 @@
    <string/>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btn_plus_size">
     <property name="geometry">
      <rect>
       <x>610</x>
@@ -38,7 +38,7 @@
      <string>+</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="btn_minus_size">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -56,7 +56,7 @@
      <string>-</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="btn_rotate_clockwice">
     <property name="geometry">
      <rect>
       <x>610</x>
@@ -69,7 +69,7 @@
      <string>turn right</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="btn_rotate_contrclokwise">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -89,7 +89,7 @@
      <string>↶</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="lbl_qr_io">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -117,7 +117,7 @@
      <pixmap>photo_2019-07-05_08-36-43.jpg</pixmap>
     </property>
    </widget>
-   <widget class="QSlider" name="horizontalSlider">
+   <widget class="QSlider" name="slider_qrsize">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -130,6 +130,19 @@
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
+   <widget class="QLabel" name="lbl_qrsize">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>10</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
@@ -137,7 +150,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>701</width>
+     <width>733</width>
      <height>21</height>
     </rect>
    </property>
@@ -145,24 +158,24 @@
     <property name="title">
      <string>file</string>
     </property>
-    <addaction name="actionsave"/>
-    <addaction name="actionload"/>
+    <addaction name="action_save"/>
+    <addaction name="action_load"/>
     <addaction name="separator"/>
-    <addaction name="actiondelete_current_qr"/>
+    <addaction name="acton_delete_current_qr"/>
    </widget>
    <addaction name="menufile"/>
   </widget>
-  <action name="actionsave">
+  <action name="action_save">
    <property name="text">
     <string>save</string>
    </property>
   </action>
-  <action name="actionload">
+  <action name="action_load">
    <property name="text">
     <string>load</string>
    </property>
   </action>
-  <action name="actiondelete_current_qr">
+  <action name="acton_delete_current_qr">
    <property name="text">
     <string>delete current qr</string>
    </property>
