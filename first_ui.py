@@ -1,0 +1,95 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'F:\PY\PYproject\qr\first_ui.ui'
+#
+# Created by: PyQt5 UI code generator 5.14.2
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(733, 564)
+        MainWindow.setAccessibleName("")
+        MainWindow.setAccessibleDescription("")
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.btn_plus_size = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_plus_size.setGeometry(QtCore.QRect(610, 100, 81, 81))
+        font = QtGui.QFont()
+        font.setPointSize(70)
+        self.btn_plus_size.setFont(font)
+        self.btn_plus_size.setObjectName("btn_plus_size")
+        self.btn_minus_size = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_minus_size.setGeometry(QtCore.QRect(520, 100, 81, 81))
+        font = QtGui.QFont()
+        font.setPointSize(70)
+        self.btn_minus_size.setFont(font)
+        self.btn_minus_size.setObjectName("btn_minus_size")
+        self.btn_rotate_clockwice = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_rotate_clockwice.setGeometry(QtCore.QRect(610, 190, 81, 81))
+        self.btn_rotate_clockwice.setObjectName("btn_rotate_clockwice")
+        self.btn_rotate_contrclokwise = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_rotate_contrclokwise.setGeometry(QtCore.QRect(520, 190, 81, 81))
+        font = QtGui.QFont()
+        font.setPointSize(90)
+        font.setUnderline(False)
+        font.setKerning(True)
+        self.btn_rotate_contrclokwise.setFont(font)
+        self.btn_rotate_contrclokwise.setObjectName("btn_rotate_contrclokwise")
+        self.lbl_qr_io = QtWidgets.QLabel(self.centralwidget)
+        self.lbl_qr_io.setGeometry(QtCore.QRect(10, 10, 500, 500))
+        self.lbl_qr_io.setBaseSize(QtCore.QSize(0, 0))
+        self.lbl_qr_io.setMouseTracking(True)
+        self.lbl_qr_io.setTabletTracking(True)
+        self.lbl_qr_io.setText("")
+        self.lbl_qr_io.setPixmap(QtGui.QPixmap("F:\\PY\\PYproject\\qr\\photo_2019-07-05_08-36-43.jpg"))
+        self.lbl_qr_io.setObjectName("lbl_qr_io")
+        self.slider_qrsize = QtWidgets.QSlider(self.centralwidget)
+        self.slider_qrsize.setGeometry(QtCore.QRect(520, 60, 160, 21))
+        self.slider_qrsize.setOrientation(QtCore.Qt.Horizontal)
+        self.slider_qrsize.setObjectName("slider_qrsize")
+        self.lbl_qrsize = QtWidgets.QLabel(self.centralwidget)
+        self.lbl_qrsize.setGeometry(QtCore.QRect(520, 10, 161, 41))
+        self.lbl_qrsize.setObjectName("lbl_qrsize")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 733, 21))
+        self.menubar.setObjectName("menubar")
+        self.menufile = QtWidgets.QMenu(self.menubar)
+        self.menufile.setObjectName("menufile")
+        MainWindow.setMenuBar(self.menubar)
+        self.action_save = QtWidgets.QAction(MainWindow)
+        self.action_save.setObjectName("action_save")
+        self.action_load = QtWidgets.QAction(MainWindow)
+        self.action_load.setObjectName("action_load")
+        self.acton_delete_current_qr = QtWidgets.QAction(MainWindow)
+        self.acton_delete_current_qr.setObjectName("acton_delete_current_qr")
+        self.menufile.addAction(self.action_save)
+        self.menufile.addAction(self.action_load)
+        self.menufile.addSeparator()
+        self.menufile.addAction(self.acton_delete_current_qr)
+        self.menubar.addAction(self.menufile.menuAction())
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "fuzzy qr reader"))
+        self.btn_plus_size.setText(_translate("MainWindow", "+"))
+        self.btn_minus_size.setText(_translate("MainWindow", "-"))
+        self.btn_rotate_clockwice.setText(_translate("MainWindow", "turn right"))
+        self.btn_rotate_contrclokwise.setText(_translate("MainWindow", "↶"))
+        self.lbl_qrsize.setText(_translate("MainWindow", "TextLabel"))
+        self.menufile.setTitle(_translate("MainWindow", "file"))
+        self.action_save.setText(_translate("MainWindow", "save"))
+        self.action_load.setText(_translate("MainWindow", "load"))
+        self.acton_delete_current_qr.setText(_translate("MainWindow", "delete current qr"))
