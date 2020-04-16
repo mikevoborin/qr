@@ -6,7 +6,11 @@
    <rect>
     <x>0</x>
     <y>0</y>
+<<<<<<< HEAD
     <width>733</width>
+=======
+    <width>701</width>
+>>>>>>> afd92e3... add first pyqt5 gui
     <height>564</height>
    </rect>
   </property>
@@ -20,7 +24,11 @@
    <string/>
   </property>
   <widget class="QWidget" name="centralwidget">
+<<<<<<< HEAD
    <widget class="QPushButton" name="btn_plus_size">
+=======
+   <widget class="QPushButton" name="pushButton">
+>>>>>>> afd92e3... add first pyqt5 gui
     <property name="geometry">
      <rect>
       <x>610</x>
@@ -38,7 +46,11 @@
      <string>+</string>
     </property>
    </widget>
+<<<<<<< HEAD
    <widget class="QPushButton" name="btn_minus_size">
+=======
+   <widget class="QPushButton" name="pushButton_2">
+>>>>>>> afd92e3... add first pyqt5 gui
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -56,7 +68,11 @@
      <string>-</string>
     </property>
    </widget>
+<<<<<<< HEAD
    <widget class="QPushButton" name="btn_rotate_clockwice">
+=======
+   <widget class="QPushButton" name="pushButton_3">
+>>>>>>> afd92e3... add first pyqt5 gui
     <property name="geometry">
      <rect>
       <x>610</x>
@@ -69,7 +85,11 @@
      <string>turn right</string>
     </property>
    </widget>
+<<<<<<< HEAD
    <widget class="QPushButton" name="btn_rotate_contrclokwise">
+=======
+   <widget class="QPushButton" name="pushButton_4">
+>>>>>>> afd92e3... add first pyqt5 gui
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -89,7 +109,11 @@
      <string>↶</string>
     </property>
    </widget>
+<<<<<<< HEAD
    <widget class="QLabel" name="lbl_qr_io">
+=======
+   <widget class="QLabel" name="label">
+>>>>>>> afd92e3... add first pyqt5 gui
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -117,7 +141,11 @@
      <pixmap>photo_2019-07-05_08-36-43.jpg</pixmap>
     </property>
    </widget>
+<<<<<<< HEAD
    <widget class="QSlider" name="slider_qrsize">
+=======
+   <widget class="QSlider" name="horizontalSlider">
+>>>>>>> afd92e3... add first pyqt5 gui
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -130,6 +158,7 @@
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
+<<<<<<< HEAD
    <widget class="QLabel" name="lbl_qrsize">
     <property name="geometry">
      <rect>
@@ -143,6 +172,8 @@
      <string>TextLabel</string>
     </property>
    </widget>
+=======
+>>>>>>> afd92e3... add first pyqt5 gui
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
@@ -150,7 +181,11 @@
     <rect>
      <x>0</x>
      <y>0</y>
+<<<<<<< HEAD
      <width>733</width>
+=======
+     <width>701</width>
+>>>>>>> afd92e3... add first pyqt5 gui
      <height>21</height>
     </rect>
    </property>
@@ -158,6 +193,7 @@
     <property name="title">
      <string>file</string>
     </property>
+<<<<<<< HEAD
     <addaction name="action_save"/>
     <addaction name="action_load"/>
     <addaction name="separator"/>
@@ -166,16 +202,34 @@
    <addaction name="menufile"/>
   </widget>
   <action name="action_save">
+=======
+    <addaction name="actionsave"/>
+    <addaction name="actionload"/>
+    <addaction name="separator"/>
+    <addaction name="actiondelete_current_qr"/>
+   </widget>
+   <addaction name="menufile"/>
+  </widget>
+  <action name="actionsave">
+>>>>>>> afd92e3... add first pyqt5 gui
    <property name="text">
     <string>save</string>
    </property>
   </action>
+<<<<<<< HEAD
   <action name="action_load">
+=======
+  <action name="actionload">
+>>>>>>> afd92e3... add first pyqt5 gui
    <property name="text">
     <string>load</string>
    </property>
   </action>
+<<<<<<< HEAD
   <action name="acton_delete_current_qr">
+=======
+  <action name="actiondelete_current_qr">
+>>>>>>> afd92e3... add first pyqt5 gui
    <property name="text">
     <string>delete current qr</string>
    </property>
